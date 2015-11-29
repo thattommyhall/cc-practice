@@ -1,6 +1,20 @@
 (ns cc-practice.core
   (:require [clojure.browser.repl :as repl]
-            [matchbox.core :as m]))
+            [matchbox.core :as m]
+            [quil.core :as q :include-macros true]))
+
+;; (defonce conn
+;;   (repl/connect "http://localhost:9000/repl"))
+
+(defn draw []
+  (q/background 255)
+  (q/fill 0)
+  (q/ellipse 56 46 55 55))
+
+(q/defsketch hello
+  :draw draw
+  :host "screen"
+  :size [300 300])
 
 (defonce conn
     (repl/connect "http://localhost:9000/repl"))
