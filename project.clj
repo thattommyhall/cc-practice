@@ -5,7 +5,8 @@
                  [org.clojure/clojurescript "1.7.170" :classifier "aot"
                   :exclusion [org.clojure/data.json]]
                  [org.clojure/data.json "0.2.6" :classifier "aot"]
-                 [matchbox "0.0.8-SNAPSHOT"]]
+                 [matchbox "0.0.8-SNAPSHOT"]
+                 [quil "2.2.6"]]
   :jvm-opts ^:replace ["-Xmx1g" "-server"]
   :plugins [[lein-npm "0.6.1"]]
   :npm {:dependencies [[source-map-support "0.3.2"]]}
