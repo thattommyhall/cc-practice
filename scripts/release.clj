@@ -4,7 +4,7 @@
 
 (let [start (System/nanoTime)]
   (b/build "src"
-    {:output-to "release/cc_practice.js"
+    {:output-to "site/cc_practice.js"
      :output-dir "release"
      :optimizations :advanced
      :verbose true})
